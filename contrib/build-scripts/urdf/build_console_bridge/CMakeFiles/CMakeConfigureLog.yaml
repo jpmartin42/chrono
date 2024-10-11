@@ -1,0 +1,660 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-45-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc 
+      Build flags: -march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/josh/miniforge3/envs/chrono/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/3.26.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ 
+      Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/josh/miniforge3/envs/chrono/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-o72xfa"
+      binary: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-o72xfa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-o72xfa
+        
+        Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_ba176 && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc -DCMAKE_INTDIR=\\"Debug\\"  -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g   -v -o CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o -c /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_ba176.dir/Debug/'
+         /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1 -quiet -v -iprefix /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot -D CMAKE_INTDIR="Debug" -isystem /home/josh/miniforge3/envs/chrono/include /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ba176.dir/Debug/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -g -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o
+        GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.40
+        GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"
+        ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"
+        ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/josh/miniforge3/envs/chrono/include
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed
+         /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 45c9999e2ad87e1c830bdf7115b006ca
+        COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.'
+        [2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/josh/miniforge3/envs/chrono/lib -Wl,-rpath-link,/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib -v   -rdynamic CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o -o Debug/cmTC_ba176   && :
+        Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-L/home/josh/miniforge3/envs/chrono/lib' '-v' '-rdynamic' '-o' 'Debug/cmTC_ba176' '-dumpdir' 'Debug/cmTC_ba176.'
+         /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWfIMMm.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o Debug/cmTC_ba176 /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/josh/miniforge3/envs/chrono/lib -rpath-link /home/josh/miniforge3/envs/chrono/lib CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/josh/miniforge3/envs/chrono/lib
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-L/home/josh/miniforge3/envs/chrono/lib' '-v' '-rdynamic' '-o' 'Debug/cmTC_ba176' '-dumpdir' 'Debug/cmTC_ba176.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/josh/miniforge3/envs/chrono/include]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/josh/miniforge3/envs/chrono/include] ==> [/home/josh/miniforge3/envs/chrono/include]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/josh/miniforge3/envs/chrono/include;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-o72xfa]
+        ignore line: []
+        ignore line: [Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_ba176 && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc -DCMAKE_INTDIR=\\"Debug\\"  -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g   -v -o CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o -c /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_ba176.dir/Debug/']
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1 -quiet -v -iprefix /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot -D CMAKE_INTDIR="Debug" -isystem /home/josh/miniforge3/envs/chrono/include /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ba176.dir/Debug/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -g -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o]
+        ignore line: [GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.40]
+        ignore line: [GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/include]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 45c9999e2ad87e1c830bdf7115b006ca]
+        ignore line: [COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /home/josh/miniforge3/envs/chrono/lib -Wl -rpath-link /home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib -v   -rdynamic CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o -o Debug/cmTC_ba176   && :]
+        ignore line: [Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-L/home/josh/miniforge3/envs/chrono/lib' '-v' '-rdynamic' '-o' 'Debug/cmTC_ba176' '-dumpdir' 'Debug/cmTC_ba176.']
+        link line: [ /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWfIMMm.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o Debug/cmTC_ba176 /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/josh/miniforge3/envs/chrono/lib -rpath-link /home/josh/miniforge3/envs/chrono/lib CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/josh/miniforge3/envs/chrono/lib]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccWfIMMm.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [Debug/cmTC_ba176] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+          arg [-L/home/josh/miniforge3/envs/chrono/lib] ==> dir [/home/josh/miniforge3/envs/chrono/lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/lib] ==> ignore
+          arg [CMakeFiles/cmTC_ba176.dir/Debug/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/lib] ==> ignore
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/lib] ==> [/home/josh/miniforge3/envs/chrono/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> [/home/josh/miniforge3/envs/chrono/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> [/home/josh/miniforge3/envs/chrono/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/home/josh/miniforge3/envs/chrono/lib;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0;/home/josh/miniforge3/envs/chrono/lib/gcc;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/lib;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/lib;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-LrR70s"
+      binary: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-LrR70s"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-LrR70s
+        
+        Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_54b1c && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -DCMAKE_INTDIR=\\"Debug\\"  -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g   -v -o CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o -c /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_54b1c.dir/Debug/'
+         /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1plus -quiet -v -iprefix /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D CMAKE_INTDIR="Debug" -isystem /home/josh/miniforge3/envs/chrono/include /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_54b1c.dir/Debug/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -g -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o
+        GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.40
+        GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++"
+        ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward"
+        ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"
+        ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"
+        ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/josh/miniforge3/envs/chrono/include
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include
+         /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed
+         /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: b752247fe42c4276663fdd6348116302
+        COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/josh/miniforge3/envs/chrono/lib -Wl,-rpath-link,/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib -v   -rdynamic CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o -o Debug/cmTC_54b1c   && :
+        Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.4.0 (conda-forge gcc 11.4.0-13) 
+        COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-L/home/josh/miniforge3/envs/chrono/lib' '-v' '-rdynamic' '-o' 'Debug/cmTC_54b1c' '-shared-libgcc' '-dumpdir' 'Debug/cmTC_54b1c.'
+         /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6VNj8P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o Debug/cmTC_54b1c /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/josh/miniforge3/envs/chrono/lib -rpath-link /home/josh/miniforge3/envs/chrono/lib CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/josh/miniforge3/envs/chrono/lib
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-L/home/josh/miniforge3/envs/chrono/lib' '-v' '-rdynamic' '-o' 'Debug/cmTC_54b1c' '-shared-libgcc' '-dumpdir' 'Debug/cmTC_54b1c.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/josh/miniforge3/envs/chrono/include]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+          add: [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/josh/miniforge3/envs/chrono/include] ==> [/home/josh/miniforge3/envs/chrono/include]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        collapse include dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/josh/miniforge3/envs/chrono/include;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-LrR70s]
+        ignore line: []
+        ignore line: [Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_54b1c && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -DCMAKE_INTDIR=\\"Debug\\"  -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g   -v -o CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o -c /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_54b1c.dir/Debug/']
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/cc1plus -quiet -v -iprefix /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/ -isysroot /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D CMAKE_INTDIR="Debug" -isystem /home/josh/miniforge3/envs/chrono/include /home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_54b1c.dir/Debug/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -g -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.40]
+        ignore line: [GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/include]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++/backward]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/include-fixed]
+        ignore line: [ /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (conda-forge gcc 11.4.0-13) version 11.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: b752247fe42c4276663fdd6348116302]
+        ignore line: [COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'CMAKE_INTDIR="Debug"' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-v' '-o' 'CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /home/josh/miniforge3/envs/chrono/lib -Wl -rpath-link /home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib -v   -rdynamic CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o -o Debug/cmTC_54b1c   && :]
+        ignore line: [Reading specs from /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1719176526088/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/11.4.0/include/c++ --with-pkgversion='conda-forge gcc 11.4.0-13' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.4.0 (conda-forge gcc 11.4.0-13) ]
+        ignore line: [COMPILER_PATH=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/josh/miniforge3/envs/chrono/include' '-g' '-L/home/josh/miniforge3/envs/chrono/lib' '-v' '-rdynamic' '-o' 'Debug/cmTC_54b1c' '-shared-libgcc' '-dumpdir' 'Debug/cmTC_54b1c.']
+        link line: [ /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2 -plugin /home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so -plugin-opt=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6VNj8P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o Debug/cmTC_54b1c /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o -L/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0 -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../.. -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/josh/miniforge3/envs/chrono/lib -rpath-link /home/josh/miniforge3/envs/chrono/lib CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o /home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/josh/miniforge3/envs/chrono/lib]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/josh/miniforge3/envs/chrono/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc6VNj8P.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [Debug/cmTC_54b1c] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+          arg [-L/home/josh/miniforge3/envs/chrono/lib] ==> dir [/home/josh/miniforge3/envs/chrono/lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/lib] ==> ignore
+          arg [CMakeFiles/cmTC_54b1c.dir/Debug/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+          arg [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/josh/miniforge3/envs/chrono/lib] ==> ignore
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o]
+        collapse obj [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/lib] ==> [/home/josh/miniforge3/envs/chrono/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc] ==> [/home/josh/miniforge3/envs/chrono/lib/gcc]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../lib] ==> [/home/josh/miniforge3/envs/chrono/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../lib/gcc/x86_64-conda-linux-gnu/11.4.0/../../..] ==> [/home/josh/miniforge3/envs/chrono/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/josh/miniforge3/envs/chrono/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtbeginS.o;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0/crtendS.o;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/home/josh/miniforge3/envs/chrono/lib;/home/josh/miniforge3/envs/chrono/lib/gcc/x86_64-conda-linux-gnu/11.4.0;/home/josh/miniforge3/envs/chrono/lib/gcc;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/lib;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/lib;/home/josh/miniforge3/envs/chrono/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:24 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAS_VISIBILITY"
+    directories:
+      source: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-tbdBPb"
+      binary: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-tbdBPb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include"
+    buildResult:
+      variable: "HAS_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-tbdBPb
+        
+        Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_9999e && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc -DHAS_VISIBILITY -DCMAKE_INTDIR=\\"Debug\\"  -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g   -fvisibility=hidden -o CMakeFiles/cmTC_9999e.dir/Debug/src.c.o -c /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-tbdBPb/src.c
+        [2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include  -g -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/josh/miniforge3/envs/chrono/lib -Wl,-rpath-link,/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib    -rdynamic CMakeFiles/cmTC_9999e.dir/Debug/src.c.o -o Debug/cmTC_9999e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/GenerateExportHeader.cmake:238 (check_cxx_compiler_flag)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "CMakeLists.txt:58 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-jqDJsh"
+      binary: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-jqDJsh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra "
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-jqDJsh
+        
+        Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_252d4 && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY -DCMAKE_INTDIR=\\"Debug\\"  -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra   -g   -fvisibility=hidden -o CMakeFiles/cmTC_252d4.dir/Debug/src.cxx.o -c /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-jqDJsh/src.cxx
+        [2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra   -g -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/josh/miniforge3/envs/chrono/lib -Wl,-rpath-link,/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib    -rdynamic CMakeFiles/cmTC_252d4.dir/Debug/src.cxx.o -o Debug/cmTC_252d4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/GenerateExportHeader.cmake:239 (check_cxx_compiler_flag)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "CMakeLists.txt:58 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-E2PrnG"
+      binary: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-E2PrnG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra "
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-E2PrnG
+        
+        Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_4be04 && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY -DCMAKE_INTDIR=\\"Debug\\"  -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra   -g   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_4be04.dir/Debug/src.cxx.o -c /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-E2PrnG/src.cxx
+        [2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra   -g -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/josh/miniforge3/envs/chrono/lib -Wl,-rpath-link,/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib    -rdynamic CMakeFiles/cmTC_4be04.dir/Debug/src.cxx.o -o Debug/cmTC_4be04   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/GenerateExportHeader.cmake:206 (check_cxx_source_compiles)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/home/josh/miniforge3/envs/chrono/share/cmake-3.26/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "CMakeLists.txt:58 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-AijHLn"
+      binary: "/home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-AijHLn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra "
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-AijHLn
+        
+        Run Build Command(s):/home/josh/miniforge3/envs/chrono/bin/ninja -v cmTC_5a639 && [1/2] /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -DCOMPILER_HAS_DEPRECATED_ATTR -DCMAKE_INTDIR=\\"Debug\\"  -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra   -g -o CMakeFiles/cmTC_5a639.dir/Debug/src.cxx.o -c /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-AijHLn/src.cxx
+        /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-AijHLn/src.cxx: In function 'int main()':
+        /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-AijHLn/src.cxx:2:33: warning: 'int somefunc()' is deprecated [-Wdeprecated-declarations]
+            2 |     int main() { return somefunc();}
+              |                         ~~~~~~~~^~
+        /home/josh/wheel_limb_robotics/simulation/chrono/chrono/contrib/build-scripts/urdf/build_console_bridge/CMakeFiles/CMakeScratch/TryCompile-AijHLn/src.cxx:1:37: note: declared here
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+              |                                     ^~~~~~~~
+        [2/2] : && /home/josh/miniforge3/envs/chrono/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/josh/miniforge3/envs/chrono/include -fvisibility=hidden -std=c++11 -Wall -Wextra   -g -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/josh/miniforge3/envs/chrono/lib -Wl,-rpath-link,/home/josh/miniforge3/envs/chrono/lib -L/home/josh/miniforge3/envs/chrono/lib    -rdynamic CMakeFiles/cmTC_5a639.dir/Debug/src.cxx.o -o Debug/cmTC_5a639   && :
+        
+      exitCode: 0
+...

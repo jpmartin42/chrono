@@ -1,0 +1,9 @@
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/lib/libconsole_bridge.so.1.0
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/lib/libconsole_bridge.so
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/include/console_bridge/console.h
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/include/console_bridge/console_bridge_export.h
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/lib/console_bridge/cmake/console_bridge-targets.cmake
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/lib/console_bridge/cmake/console_bridge-targets-release.cmake
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/lib/console_bridge/cmake/console_bridge-config.cmake
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/lib/console_bridge/cmake/console_bridge-config-version.cmake
+/home/josh/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf/lib/pkgconfig/console_bridge.pc

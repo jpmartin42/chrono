@@ -50,7 +50,7 @@ tire_vis_type = veh.VisualizationType_MESH
 trackPoint = chrono.ChVectorD(0.0, 0.0, 1.75)
 
 # Simulation step sizes
-step_size = 1e-3
+step_size = 2e-3
 tire_step_size = step_size
 
 # Simulation end time
@@ -143,13 +143,23 @@ driver.Initialize()
 
 gator.GetVehicle().EnableRealtime(True)
 
+# Number of simulation steps between miscellaneous events
+render_steps = int(math.ceil(render_step_size / step_size))
+
+# Initialize simulation frame counters
+step_number = 0
+render_frame = 0
+
 while vis.Run() :
     time = gator.GetSystem().GetChTime()
 
     # Render scene
-    vis.BeginScene()
-    vis.Render()
-    vis.EndScene()
+    if step_number % render_steps == 0:
+        vis.BeginScene()
+        vis.Render()
+        vis.EndScene()
+
+        render_frame = render_frame + 1
 
     # Collect output data from modules (for inter-module communication)
     driver_inputs = driver.GetInputs()
@@ -165,3 +175,5 @@ while vis.Run() :
     terrain.Advance(step_size)
     gator.Advance(step_size)
     vis.Advance(step_size)
+
+    step_number = step_number + 1

@@ -18,6 +18,7 @@
 
 import os
 import math
+import time as timeclock
 import numpy as np
 import pychrono as chrono
 import pychrono.robot as viper
@@ -25,6 +26,8 @@ try:
    from pychrono import irrlicht as chronoirr
 except:
    print('Could not import ChronoIrrlicht')
+
+print('\n\n\n TESTING PRINT \n\n\n')
 
 # Chreate Chrono system
 system = chrono.ChSystemNSC()
@@ -66,21 +69,27 @@ time_step = 1e-3
 
 # Simulation loop
 time = 0
+
+starttime = timeclock.time()
+
 while (vis.Run()) :
     time = time + time_step
+
+    print(time)
+
     steering = 0
-    if time > 7:
-    	if abs(rover.GetTurnAngle()) < 1e-8:
-    		steering = 0
-    	else:
-    		steering = -0.4
-    elif time > 1:
-    	steering = 0.4
+   #  if time > 7:
+   #  	if abs(rover.GetTurnAngle()) < 1e-8:
+   #  		steering = 0
+   #  	else:
+   #  		steering = -0.4
+   #  elif time > 1:
+   #  	steering = 0.4
     driver.SetSteering(steering)
 
     rover.Update()
 
-    vis.BeginScene()
-    vis.Render()
-    vis.EndScene()
+   #  vis.BeginScene()
+   #  vis.Render()
+   #  vis.EndScene()
     system.DoStepDynamics(time_step)

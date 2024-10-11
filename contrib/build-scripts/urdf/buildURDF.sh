@@ -14,17 +14,17 @@
 
 DOWNLOAD=ON
 
-URDF_INSTALL_DIR="$HOME/Packages/urdf"
+URDF_INSTALL_DIR="$HOME/wheel_limb_robotics/simulation/chrono/libraries/urdf/Packages/urdf"
 
 BUILDDEBUG=OFF
 BUILDSYSTEM="Ninja Multi-Config"
 
 if [ ${DOWNLOAD} = OFF ]
 then
-    TINYXML2_SOURCE_DIR="$HOME/Sources/tinyxml2"
-    CONSOLE_BRIDGE_SOURCE_DIR="$HOME/Sources/console_bridge"
-    URDFDOM_HEADERS_SOURCE_DIR="$HOME/Sources/urdfdom_headers"
-    URDFDOM_SOURCE_DIR="$HOME/Sources/urdfdom"
+    TINYXML2_SOURCE_DIR="$HOME/wheel_limb_robotics/simulation/chrono/libraries/urdf/Sources/tinyxml2"
+    CONSOLE_BRIDGE_SOURCE_DIR="$$HOME/wheel_limb_robotics/simulation/chrono/libraries/urdf/Sources/console_bridge"
+    URDFDOM_HEADERS_SOURCE_DIR="$HOME/wheel_limb_robotics/simulation/chrono/libraries/urdf/Sources/urdfdom_headers"
+    URDFDOM_SOURCE_DIR="$HOME/wheel_limb_robotics/simulation/chrono/libraries/urdf/Sources/urdfdom"
 fi
 
 # ------------------------------------------------------------------------
@@ -138,8 +138,9 @@ cmake -G "${BUILDSYSTEM}" -B build_urdfdom -S ${URDFDOM_SOURCE_DIR} \
       -DCMAKE_DEBUG_POSTFIX=_d \
       -DCMAKE_RELWITHDEBINFO_POSTFIX=_rd \
       -Dconsole_bridge_DIR:PATH=${URDF_INSTALL_DIR}/lib/console_bridge/cmake \
-      -Durdfdom_headers_DIR:PATH=${URDF_INSTALL_DIR}/lib/urdfdom_headers/cmake
-
+      -Durdfdom_headers_DIR:PATH=${URDF_INSTALL_DIR}/lib/urdfdom_headers/cmake \
+      -DTINYXML2_INCLUDE_DIR:PATH=${URDF_INSTALL_DIR}/include \
+      -DTinyXML2_DIR:PATH=${URDF_INSTALL_DIR}/CMake 
 echo -e "\n------------------------ Build and install urdfdom\n"
 cmake --build build_urdfdom --config Release
 cmake --install build_urdfdom --config Release --prefix ${URDF_INSTALL_DIR}

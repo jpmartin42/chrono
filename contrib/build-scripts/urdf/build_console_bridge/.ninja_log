@@ -1,0 +1,4 @@
+# ninja log v6
+0	236	1728150043804872693	CMakeFiles/console_bridge.dir/Release/src/console.cpp.o	748a0150e6f8630a
+236	272	1728150044040873440	lib/Release/libconsole_bridge.so.1.0	685a13bfd7bebc1c
+272	276	1728150044076873554	lib/Release/libconsole_bridge.so	3c229ba7a305af8c

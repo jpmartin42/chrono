@@ -39,15 +39,12 @@
 #include "chrono/physics/ChLinkMotorRotationTorque.h"
 
 #include "chrono_thirdparty/filesystem/path.h"
-<<<<<<< HEAD
 #include "chrono/geometry/ChTriangleMeshConnected.h"
-=======
 
 #ifdef HAVE_ROS
     #include "ament_index_cpp/get_package_prefix.hpp"
     #include "ament_index_cpp/get_package_share_directory.hpp"
 #endif
->>>>>>> jz-main
 
 namespace chrono {
 namespace parsers {
@@ -473,7 +470,7 @@ bool Discard(urdf::LinkConstSharedPtr link) {
 std::shared_ptr<ChBodyAuxRef> ChParserURDF::toChBody(urdf::LinkConstSharedPtr link) {
     // Discard bodies with zero inertia properties
     if (Discard(link)) {
-        cerr << "WARNING: Body " << link->name << " has ZERO inertia." << endl;
+        // cerr << "WARNING: Body " << link->name << " has ZERO inertia." << endl;
 
         // Error if a discarded body was connected to its parent with anything but a FIXED joint
         if (link->parent_joint->type != urdf::Joint::FIXED) {

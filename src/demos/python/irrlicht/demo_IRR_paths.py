@@ -158,11 +158,17 @@ vis.AddTypicalLights()
 #  Run the simulation
 #
 
+timestep = 0.01
+time = 0.0
+
 while vis.Run():
     vis.BeginScene() 
     vis.Render()
     vis.EndScene()
-    sys.DoStepDynamics(5e-3)
+    sys.DoStepDynamics(timestep)
+
+    time = time + timestep
+    print("Time:",time)
 
 
 

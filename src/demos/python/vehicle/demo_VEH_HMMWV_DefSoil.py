@@ -23,6 +23,7 @@ import pychrono as chrono
 import pychrono.vehicle as veh
 import pychrono.irrlicht as irr
 import math as m
+import time as clocktime
 
 # =============================================================================
 
@@ -104,18 +105,22 @@ def main():
     vis.AddSkyBox()
     vis.AttachVehicle(hmmwv.GetVehicle())
 
+    tstart = clocktime.time()
+    tcurr = 0.0
     # Simulation loop
     while vis.Run() :
         time = hmmwv.GetSystem().GetChTime()
+        tcurr = clocktime.time() - tstart
+        print("Time:",time, "            ClockTime:", tcurr )
 
         # End simulation
         if (time >= 4):
             break
 
         # Draw scene
-        vis.BeginScene()
-        vis.Render()
-        vis.EndScene()
+        # vis.BeginScene()
+        # vis.Render()
+        # vis.EndScene()
 
         # Get driver inputs
         driver_inputs = driver.GetInputs()

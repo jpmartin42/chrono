@@ -181,14 +181,17 @@ int main(int argc, char* argv[]) {
 
     // Simulation loop
     while (vis->Run()) {
-#if defined(CHRONO_IRRLICHT) || defined(CHRONO_VSG)
-        vis->BeginScene();
-        vis->Render();
-        vis->EndScene();
-#endif
+// #if defined(CHRONO_IRRLICHT) || defined(CHRONO_VSG)
+//         vis->BeginScene();
+//         vis->Render();
+//         vis->EndScene();
+// #endif
 
         // Set current steering angle
         double time = viper.GetSystem()->GetChTime();
+
+        std::cout << "Time: " << time << std::endl;
+
         double max_steering = CH_C_PI / 6;
         double steering = 0;
         if (time > 2 && time < 7)
