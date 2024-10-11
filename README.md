@@ -1,3 +1,5 @@
+THIS IS A MODIFIED FORK OF CHRONO FOR USE WITH GYM-CHRONO. The purpose of this fork is to investigate the use of gym-chrono to train robotic platforms with articulated and wheel-on-limb suspension strategies.
+
 ATTENTION
 =========
 Although Chrono is released under BSD 3 license, any new code under this repo, except the 'main' fork which is pegged to 'main' in Project Chrono, is release under GPL v3.0 license.
