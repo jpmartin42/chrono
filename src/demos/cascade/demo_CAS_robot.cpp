@@ -88,9 +88,9 @@ int main(int argc, char* argv[]) {
     // Note, In most CADs the Y axis is horizontal, but we want it vertical.
     // So define a root transformation for rotating all the imported objects.
     ChQuaternion<> rotation1;
-    rotation1.Q_from_AngAxis(-CH_C_PI / 2, VECT_X);  // 1: rotate 90° on X axis
+    rotation1.Q_from_AngAxis(-CH_C_PI / 2, VECT_X);  // 1: rotate 90ï¿½ on X axis
     ChQuaternion<> rotation2;
-    rotation2.Q_from_AngAxis(CH_C_PI, VECT_Y);            // 2: rotate 180° on vertical Y axis
+    rotation2.Q_from_AngAxis(CH_C_PI, VECT_Y);            // 2: rotate 180ï¿½ on vertical Y axis
     ChQuaternion<> tot_rotation = rotation2 % rotation1;  // rotate on 1 then on 2, using quaternion product
     ChFrameMoving<> root_frame(ChVector<>(0, 0, 0), tot_rotation);
 
