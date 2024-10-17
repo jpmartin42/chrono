@@ -35,6 +35,8 @@
 
 #include "chrono_models/robot/unitree_go1/Unitree_Go1.h"
 
+#include <iostream>
+
 namespace chrono {
 namespace unitree_go1 {
 
@@ -96,6 +98,19 @@ void Unitree_Go1::Initialize(const ChFrame<>& pos) {
     m_robot->SetJointActuationType("RR_hip_joint", ChParserURDF::ActuationType::POSITION);
     m_robot->SetJointActuationType("RR_thigh_joint", ChParserURDF::ActuationType::POSITION);
     m_robot->SetJointActuationType("RR_calf_joint", ChParserURDF::ActuationType::POSITION);
+
+    // m_robot->SetJointActuationType("FL_hip_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FL_thigh_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FL_calf_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FR_hip_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FR_thigh_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FR_calf_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("RL_hip_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("RL_thigh_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("RL_calf_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("RR_hip_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("RR_thigh_joint", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("RR_calf_joint", ChParserURDF::ActuationType::FORCE);
 
     // Create the Chrono model
     m_robot->PopulateSystem(*m_system);
@@ -197,6 +212,13 @@ void Unitree_Go1::Initialize(const ChFrame<>& pos) {
         m_calf_motors[i]->SetMotorFunction(m_calf_motor_funcs[i]);
     }
 
+    // Obtain foot for force sensor test
+    // std::vector<std::string> foot_link_names = {"FL_foot_fixed", "FF_foot_fixed", "RL_foot_fixed", "RR_foot_fixed"};
+
+    for(int i = 0; i < 4; i++)
+    {
+        m_feet_links[i] = m_robot->GetChLink(foot_link_names[i]);
+    }
 
 }
 
@@ -229,6 +251,29 @@ double Unitree_Go1::GetCalfMotorPos(UnitreeSideID id, double x){
     return m_calf_motor_funcs[id]->Get_y(x);
 }
 // =============================================================================
+
+void Unitree_Go1::PrintWrenchesAtFeet()
+{
+    for(size_t i = 0; i < 4; i++)
+    {
+        // Get wrench at foot
+        ChVector force  = GetFootLink(i)->Get_react_force();
+        ChVector torque = GetFootLink(i)->Get_react_torque();
+        
+        // Decompose 
+        double fx = force.x();
+        double fy = force.y();
+        double fz = force.z();
+        double tx = torque.x();
+        double ty = torque.y();
+        double tz = torque.z();
+
+        std::cout << foot_link_names[i] << "   :   [ " << fx << "  ,  " << fy << "  ,  " << fz << "  ,  " 
+                                                       << tx << "  ,  " << ty << "  ,  " << tz <<   " ]\n";
+    }
+
+    std::cout << std::endl;
+}
 
 }  // namespace unitree_go1
 }  // namespace chrono

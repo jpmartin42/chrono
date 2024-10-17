@@ -40,14 +40,16 @@ class CH_MODELS_API WheelOnLimb
     // Initialize the system at the specified position
     void Initialize(const ChFrame<>& pos);
 
+    // Initialize the system starting angles
+    void InitPose(const ChFrame<>& pos);
+
     // Command types for system
     void SetMotorCommandPos(size_t num_limb, size_t num_joint, double pos);
     void SetMotorCommandVel(size_t num_limb, size_t num_joint, double vel);
     void SetMotorCommandTorque(size_t num_limb, size_t num_joint, double tau);
 
-    // Function to return specific values
+    // Function to return wrenches at body
     void GetFTAtJoints(size_t limb_num);
-
 
     // Pointers to get specific bodies
 
@@ -64,12 +66,15 @@ class CH_MODELS_API WheelOnLimb
     std::array<std::shared_ptr<ChLinkMotor>, 4> m_j4_motors;
     std::array<std::shared_ptr<ChLinkMotor>, 4> m_j5_motors;
 
+    std::array<std::shared_ptr<ChLink>, 4> m_ft_sensors;
+
     std::array<std::shared_ptr<ChFunction_Setpoint>, 4> m_j1_motor_funcs;  ///< drive motor functions
     std::array<std::shared_ptr<ChFunction_Setpoint>, 4> m_j2_motor_funcs;  ///< drive motor functions
     std::array<std::shared_ptr<ChFunction_Setpoint>, 4> m_j3_motor_funcs;  ///< drive motor functions
     std::array<std::shared_ptr<ChFunction_Setpoint>, 4> m_j4_motor_funcs;  ///< drive motor functions
     std::array<std::shared_ptr<ChFunction_Setpoint>, 4> m_j5_motor_funcs;  ///< drive motor functions
 
+    double step_size_init_ = 5e-4;
 
 };
 

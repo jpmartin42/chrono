@@ -156,6 +156,10 @@ int main(int argc, char* argv[]) {
 
         // Advance system dynamics
         sys.DoStepDynamics(step_size);
+
+        // Print force and torque at each foot
+        robot.PrintWrenchesAtFeet();
+
         real_timer.Spin(step_size);
     }
 

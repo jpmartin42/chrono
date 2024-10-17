@@ -312,6 +312,9 @@ int main(int argc, char* argv[]) {
 
         // Advance system dynamics
         sys.DoStepDynamics(step_size);
+
+        // Dynamics
+
         real_timer.Spin(step_size);
     }
 

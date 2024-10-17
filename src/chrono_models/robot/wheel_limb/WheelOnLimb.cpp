@@ -89,16 +89,28 @@ void WheelOnLimb::Initialize(ChSystem* system) : m_system(system)
 
 
     // Obtain motors
-
+    
     // 
 
     for (size_t i = 0; i < 4; i++)
     {
-
+      
     }
 
 
 
+}
+
+void WheelOnLimb::InitPose(ChSystem* system, double step_size)
+{
+  // Temporarily set all joint actuation to position control
+
+  // Set joints to desired poses
+
+  // Iterate system dynamics once to set the joints to the desired positions
+  sys.DoStepDynamics(step_size_init_);
+
+  // Re-enable torque control
 }
 
 // Command types for system
