@@ -91,6 +91,7 @@ class CH_MODELS_API Unitree_Go1 {
     std::shared_ptr<ChLinkMotor> GetCalfMotor(UnitreeSideID id) const { return m_calf_motors[id]; }
 
     std::shared_ptr<ChLinkBase> GetFootLink(size_t id) const { return m_feet_links[id]; }
+    // std::shared_ptr<ChLinkMotor> GetFootLink(size_t id) const { return m_feet_links[id]; }
 
     void PrintWrenchesAtFeet();
 
@@ -117,6 +118,8 @@ class CH_MODELS_API Unitree_Go1 {
 
     // Unitree Go1 foot link
     std::array<std::shared_ptr<ChLinkBase>, 4> m_feet_links;
+    // std::array<std::shared_ptr<ChLinkMotor>, 4> m_feet_links;
+    std::array<std::shared_ptr<ChFunction_Setpoint>, 4> m_foot_motor_funcs;  ///< drive motor functions
 
     std::vector<std::string> foot_link_names = {"FL_foot_fixed", "FR_foot_fixed", "RL_foot_fixed", "RR_foot_fixed"};
     // std::vector<std::string> foot_link_names = {"FL_hip_fixed", "FR_hip_fixed", "RL_hip_fixed", "RR_hip_fixed"};

@@ -342,8 +342,10 @@
       <inertia ixx="0.003607648222" ixy="1.494971e-06" ixz="-0.000132778525" iyy="0.003626771492" iyz="-2.8638535e-05" izz="3.5148003e-05"/>
     </inertial>
   </link>
-  <joint name="FL_foot_fixed" type="fixed">
+  <joint name="FL_foot_fixed" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 -0.213"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.01" upper="0.01" effort="33.5" velocity="21"/>
     <parent link="FL_calf"/>
     <child link="FL_foot"/>
   </joint>
@@ -494,8 +496,10 @@
       <inertia ixx="0.003607648222" ixy="1.494971e-06" ixz="-0.000132778525" iyy="0.003626771492" iyz="-2.8638535e-05" izz="3.5148003e-05"/>
     </inertial>
   </link>
-  <joint name="RR_foot_fixed" type="fixed">
+  <joint name="RR_foot_fixed" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 -0.213"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.01" upper="0.01" effort="33.5" velocity="21"/>
     <parent link="RR_calf"/>
     <child link="RR_foot"/>
   </joint>
@@ -646,8 +650,10 @@
       <inertia ixx="0.003607648222" ixy="1.494971e-06" ixz="-0.000132778525" iyy="0.003626771492" iyz="-2.8638535e-05" izz="3.5148003e-05"/>
     </inertial>
   </link>
-  <joint name="RL_foot_fixed" type="fixed">
+  <joint name="RL_foot_fixed" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 -0.213"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.01" upper="0.01" effort="33.5" velocity="21"/>
     <parent link="RL_calf"/>
     <child link="RL_foot"/>
   </joint>

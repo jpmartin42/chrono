@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+
+<robot name="go1_description">
+
+ <link name="link1">
+   <inertial>
+     <origin xyz="0 0 0.5" rpy="0 0 0"/>
+     <mass value="0.5"/>
+     <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+   </inertial>
+
+   <visual>
+     <origin xyz="0 0 0" rpy="0 0 0" />
+     <geometry>
+       <box size="0.5 0.5 0.5" />
+     </geometry>
+   </visual>
+
+   <collision>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <geometry>
+       <box size="0.5 0.5 0.5" />
+     </geometry>
+   </collision>
+ </link>
+
+  <joint name="sensor_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 1.1"/>
+    <parent link="link1"/>
+    <child link="link2"/>
+  </joint>
+
+  <link name="link2">
+   <inertial>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <mass value="0.5"/>
+     <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+   </inertial>
+
+   <visual>
+     <origin xyz="0 0 0" rpy="0 0 0" />
+     <geometry>
+       <box size="0.5 0.5 0.5" />
+     </geometry>
+   </visual>
+
+   <collision>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <geometry>
+       <box size="0.5 0.5 0.5" />
+     </geometry>
+   </collision>
+ </link>
+
+
+  <joint name="motor_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="0 0 1.1"/>
+    <axis xyz="0 0 1"/>
+    <parent link="link2"/>
+    <child link="link3"/>
+  </joint>
+
+
+  <link name="link3">
+   <inertial>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <mass value="0.5"/>
+     <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+   </inertial>
+
+   <visual>
+     <origin xyz="0 0 0" rpy="0 0 0" />
+     <geometry>
+       <box size="0.5 0.5 0.5" />
+     </geometry>
+   </visual>
+
+   <collision>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <geometry>
+       <box size="0.5 0.5 0.5" />
+     </geometry>
+   </collision>
+ </link>
+
+
+</robot>

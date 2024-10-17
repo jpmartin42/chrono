@@ -95,6 +95,15 @@ set(CRM_COPTERS_FILES
 source_group("copters" FILES ${CRM_COPTERS_FILES})
 
 #-----------------------------------------------------------------------------
+if(ENABLE_MODULE_PARSERS)
+    set(CRM_TESTLINK_FILES
+        testlink/testlink.cpp
+        testlink/testlink.h
+    )
+    source_group("testlink" FILES ${CRM_TESTLINK_FILES})
+endif()
+
+#-----------------------------------------------------------------------------
 
 set(CXX_FLAGS ${CH_CXX_FLAGS})
 set(LIBRARIES "ChronoEngine")
@@ -123,6 +132,7 @@ add_library(ChronoModels_robot
             ${CRM_COPTERS_FILES}
             ${CRM_UNITREEGO1_FILES}
             ${CRM_RASSOR_FILES}
+            ${CRM_TESTLINK_FILES}
             )
 
 set_target_properties(ChronoModels_robot PROPERTIES

@@ -112,6 +112,11 @@ void Unitree_Go1::Initialize(const ChFrame<>& pos) {
     // m_robot->SetJointActuationType("RR_thigh_joint", ChParserURDF::ActuationType::FORCE);
     // m_robot->SetJointActuationType("RR_calf_joint", ChParserURDF::ActuationType::FORCE);
 
+    // m_robot->SetJointActuationType("FL_foot_fixed", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FL_foot_fixed", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FL_foot_fixed", ChParserURDF::ActuationType::FORCE);
+    // m_robot->SetJointActuationType("FL_foot_fixed", ChParserURDF::ActuationType::FORCE);
+
     // Create the Chrono model
     m_robot->PopulateSystem(*m_system);
 
@@ -143,20 +148,20 @@ void Unitree_Go1::Initialize(const ChFrame<>& pos) {
     // Enable collsion and set contact material for selected bodies of the robot
     m_trunk->SetCollide(true);
 
-    m_calfs[UA1_FL]->SetCollide(true);
-    m_calfs[UA1_FR]->SetCollide(true);
-    m_calfs[UA1_RL]->SetCollide(true);
-    m_calfs[UA1_RR]->SetCollide(true);
+    m_calfs[UA1_FL]->SetCollide(false);
+    m_calfs[UA1_FR]->SetCollide(false);
+    m_calfs[UA1_RL]->SetCollide(false);
+    m_calfs[UA1_RR]->SetCollide(false);
 
     m_feet[UA1_FL]->SetCollide(true);
     m_feet[UA1_FR]->SetCollide(true);
     m_feet[UA1_RL]->SetCollide(true);
     m_feet[UA1_RR]->SetCollide(true);
 
-    m_hips[UA1_FL]->SetCollide(true);
-    m_hips[UA1_FR]->SetCollide(true);
-    m_hips[UA1_RL]->SetCollide(true);
-    m_hips[UA1_RR]->SetCollide(true);
+    m_hips[UA1_FL]->SetCollide(false);
+    m_hips[UA1_FR]->SetCollide(false);
+    m_hips[UA1_RL]->SetCollide(false);
+    m_hips[UA1_RR]->SetCollide(false);
 
     m_thighs[UA1_FL]->SetCollide(true);
     m_thighs[UA1_FR]->SetCollide(true);
@@ -172,15 +177,15 @@ void Unitree_Go1::Initialize(const ChFrame<>& pos) {
 
     m_trunk->GetCollisionModel()->SetAllShapesMaterial(cmat);
 
-    m_calfs[UA1_FL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
-    m_calfs[UA1_FR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
-    m_calfs[UA1_RL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
-    m_calfs[UA1_RR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_calfs[UA1_FL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_calfs[UA1_FR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_calfs[UA1_RL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_calfs[UA1_RR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
 
-    m_hips[UA1_FL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
-    m_hips[UA1_FR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
-    m_hips[UA1_RL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
-    m_hips[UA1_RR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_hips[UA1_FL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_hips[UA1_FR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_hips[UA1_RL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
+    // m_hips[UA1_RR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
 
     m_thighs[UA1_FL]->GetCollisionModel()->SetAllShapesMaterial(cmat);
     m_thighs[UA1_FR]->GetCollisionModel()->SetAllShapesMaterial(cmat);
@@ -218,6 +223,8 @@ void Unitree_Go1::Initialize(const ChFrame<>& pos) {
     for(int i = 0; i < 4; i++)
     {
         m_feet_links[i] = m_robot->GetChLink(foot_link_names[i]);
+        // m_foot_motor_funcs[i] = chrono_types::make_shared<ChFunction_Setpoint>();
+        // m_feet_links[i]->SetMotorFunction(m_foot_motor_funcs[i]);
     }
 
 }

@@ -30,6 +30,7 @@ endif()
 if(ENABLE_MODULE_PARSERS)
   set(DEMOS ${DEMOS}
       demo_ROBOT_UnitreeGo1_Rigid
+      demo_ROBOT_Testlink
   )
 endif()
 
