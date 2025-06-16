@@ -2,8 +2,8 @@
 # This snippet install Chrono in ${PACKAGE_DIR}/chrono
 # It includes other snippets, where specific modules can be added or removed based on need
 
-ARG CHRONO_BRANCH="feature/modern_cmake"
-ARG CHRONO_REPO="https://github.com/projectchrono/chrono.git"
+ARG CHRONO_BRANCH="main"
+ARG CHRONO_REPO="https://github.com/jpmartin42/chrono.git"
 ARG CHRONO_DIR="${USERHOME}/chrono"
 ARG CHRONO_INSTALL_DIR="${USERHOME}/packages/chrono"
 ARG PACKAGE_DIR="${USERHOME}/packages"
@@ -54,6 +54,8 @@ INCLUDE ./ch_sensor.dockerfile
 INCLUDE ./ch_parser.dockerfile
 INCLUDE ./ch_python.dockerfile
 
+INCLUDE ./wheel_limb_ws.dockerfile
+
 # Install Chrono
 RUN ${PRE_BUILD_SCRIPTS} && \
     # Evaluate the cmake options to expand any $(...) commands or variables
@@ -62,7 +64,7 @@ RUN ${PRE_BUILD_SCRIPTS} && \
     cd ${CHRONO_DIR}/build && \
     cmake ../ -G Ninja \
         -DCMAKE_BUILD_TYPE=Release \
-        -DBUILD_DEMOS=OFF \
+        -DBUILD_DEMOS=ON \
         -DBUILD_BENCHMARKING=OFF \
         -DBUILD_TESTING=OFF \
         -DCMAKE_LIBRARY_PATH=$(find /usr/local/cuda/ -type d -name stubs) \
